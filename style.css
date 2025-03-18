@@ -538,4 +538,250 @@ input, textarea {
 
 
 
-  
+/* Estilos para Misión, Visión y Compromiso */
+#mision-vision-hero {
+    background: linear-gradient(rgba(42, 59, 71, 0.9), rgba(42, 59, 71, 0.9)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.mision-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.valor-card {
+    background: var(--text-light);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+}
+
+.valor-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.abogados-descripcion {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 15px;
+}
+
+.abogados-descripcion h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.abogados-descripcion p {
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .mision-vision-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .valor-card {
+        padding: 2rem;
+    }
+    
+    .abogados-descripcion {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+/* Estilos para perfil de abogado */
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.abogado-img-container {
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--accent-color);
+}
+
+.perfil-info {
+    color: var(--text-light);
+}
+
+.perfil-info h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.perfil-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Secciones específicas */
+.perfil-section {
+    padding: 6rem 0;
+    border-bottom: 1px solid rgba(179, 139, 109, 0.1);
+}
+
+.compromiso-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.logros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.resultados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 1024px) {
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .abogado-img-container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfil-info h1 {
+        font-size: 2rem;
+    }
+    
+    .perfil-stats {
+        flex-direction: column;
+    }
+    
+    .compromiso-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Servicios Corporativos Mejorados */
+.servicio-detalle {
+    background: var(--text-light);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.servicio-header {
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+.servicio-contenido {
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.servicio-detalle.active .servicio-contenido {
+    max-height: 500px;
+    padding: 2rem;
+}
+
+.servicio-icon {
+    font-size: 2rem;
+}
+
+.btn-mas {
+    margin-top: 1.5rem;
+    background: var(--accent-color);
+    padding: 0.8rem 2rem;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.beneficio-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .servicio-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .servicio-contenido {
+        padding: 0 1rem;
+    }
+    
+    .servicio-detalle.active .servicio-contenido {
+        padding: 1rem;
+    }
+}
+
+
+
