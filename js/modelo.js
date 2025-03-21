@@ -1,3 +1,5 @@
+
+//barra de navegación--desplasamientosuabe//
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
