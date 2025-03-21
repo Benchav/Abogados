@@ -785,15 +785,15 @@ input, textarea {
 
 
 
-/* optimizacion boton hamburguesa css parte de implementacion responsive movil*/
-
-/* Estilos para el botón menú hamburguesa */
+/* --- BOTÓN HAMBURGUESA --- */
 .menu-toggle {
     display: none; /* Se mostrará solo en móviles */
     background: none;
     border: none;
     cursor: pointer;
     z-index: 1100; /* Asegura que esté por encima de otros elementos */
+    /* Si quieres que siempre tenga un poco de espacio lateral en pantallas grandes:
+       margin-right: 1rem; */
   }
   
   .hamburger {
@@ -836,11 +836,15 @@ input, textarea {
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
-  /* Ajustes para dispositivos móviles */
+  /* --- MENÚ RESPONSIVE (MÓVIL) --- */
   @media (max-width: 768px) {
     /* Mostrar el botón del menú hamburguesa */
     .menu-toggle {
       display: block;
+      /* Ubícalo en la esquina superior derecha con algo de espacio */
+      position: absolute;
+      top: 40px;      /* Se ajusta la distancia desde arriba */
+      right: 20px;    /* Se mantiene el espacio desde la derecha */
     }
   
     /* Ocultar el menú por defecto y configurar su despliegue */
@@ -851,10 +855,12 @@ input, textarea {
       align-items: center;
       background: rgba(255, 255, 255, 0.9);
       position: absolute;
-      top: 100px; /* Debe coincidir con el padding superior del body */
+      top: 80px; /* Ajusta para que el menú no se superponga con el botón */
       left: 0;
       width: 100%;
-      padding: 1rem 0;
+      /* Espaciado interno para que no se vea pegado a los bordes */
+      padding: 1rem 2rem;
+      box-sizing: border-box; /* Importante para que el padding no cause overflow */
     }
   
     /* Mostrar el menú cuando tenga la clase 'active' */
@@ -862,6 +868,8 @@ input, textarea {
       display: flex;
     }
   }
+
+
   
   /* optimizacion responsive movil en las pantallas abogados*/
 
