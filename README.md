@@ -63,15 +63,6 @@ Abogados/
 - **Vercel:** Para el despliegue y hosting del proyecto.
 - **Hostinger:** Para el dominio utilizado, metodos de seguridad y monitoreo web.
 
-## Contribuciones
-
-Si deseas contribuir a este proyecto, por favor sigue estos pasos:
-
-1. Realiza un fork del repositorio.
-2. Crea una rama con la nueva funcionalidad: `git checkout -b nueva-funcionalidad`
-3. Realiza los cambios y haz commit: `git commit -am 'Añadir nueva funcionalidad'`
-4. Sube los cambios a tu fork: `git push origin nueva-funcionalidad`
-5. Envía un Pull Request.
 
 ## Licencia
 
