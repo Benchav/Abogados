@@ -863,11 +863,7 @@ input, textarea {
     }
   }
   
-
-
-
   /* optimizacion responsive movil en las pantallas abogados*/
-
 
   @media (max-width: 768px) {
     /* Aumenta el padding superior para que el contenido no quede tapado por el nav fijo */
@@ -880,23 +876,3 @@ input, textarea {
       margin-top: 100px; /* Opcional si no modificas el padding del body */
     }
   }
-  
-
-
-  /*otros ajustes del nav para body movile*/
-
-  @media (max-width: 768px) {
-  body {
-    padding-top: 80px; /* mantiene el espacio para el nav fijo */
-  }
-
-  nav {
-    background: #fff; /* Cambiamos a color blanco */
-    /* Opcional: Agrega un borde o sombra si quieres separar visualmente el nav del contenido */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .hero {
-    margin-top: 0; /* El hero inicia justo debajo del nav */
-  }
-}
