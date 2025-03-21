@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav>
-        <div class="container">
-            <h1 class="logo">Servicios<span>Legales</span></h1>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#abogados">Abogados</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navegación -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">Servicios<span>Legales</span></h1>
+      <!-- Botón de menú hamburguesa -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#abogados">Abogados</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
     <!-- Sección Hero -->
     <header class="hero" id="inicio">
@@ -276,6 +281,17 @@
                 submitButton.innerHTML = 'Enviar Mensaje';
             }
         });
+
+        // Código para el menú hamburguesa
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('nav ul.nav-menu');
+
+      toggleButton.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+        toggleButton.classList.toggle('open'); // Opcional: para animar el botón
+      });
+    });
     </script>
 </body>
 </html>

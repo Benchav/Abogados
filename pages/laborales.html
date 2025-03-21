@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
- <!-- barra de navegación -->
-<nav>
+  <!-- Navegación -->
+  <nav>
     <div class="container">
-        <h1 class="logo">Servicios<span>Legales</span></h1>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html#nosotros">Nosotros</a></li>
-            <li><a href="../index.html#abogados">Abogados</a></li> 
-            <li><a href="../index.html#servicios">Servicios</a></li>
-            <li><a href="../index.html#contacto">Contacto</a></li>
-        </ul>
+      <h1 class="logo">Servicios<span>Legales</span></h1>
+      <!-- Botón de menú hamburguesa -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <ul class="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="../index.html#abogados">Abogados</a></li> <!-- Página independiente -->
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
     <!-- Hero Section -->
     <header class="hero" id="laboral-hero">
@@ -172,6 +177,17 @@
                 item.classList.toggle('active');
             });
         });
+
+         // Código para el menú hamburguesa
+    document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul.nav-menu');
+
+  toggleButton.addEventListener('click', function () {
+    navMenu.classList.toggle('active');
+    toggleButton.classList.toggle('open'); // Opcional: para animar el botón
+  });
+});
     </script>
 </body>
 </html>
